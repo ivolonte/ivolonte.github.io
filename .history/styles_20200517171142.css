@@ -1,0 +1,228 @@
+/* Master styles */
+body {
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.bs-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.bs-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-side {
+    display: flex;
+}
+
+#ivlogo {
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.right-side {
+    display: flex;
+}
+
+.navigation > .right-side > div {
+    margin-left: 30px;
+    font-size: 120%;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.bs-navigation > .right-side > div {
+    margin-left: 30px;
+    font-size: 120%;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.navigation-link {
+    height: 22px;
+    border-bottom: 1px transparent;
+    transition: border-bottom 0.5s;
+}
+
+.bas-navigation-link {
+    height: 22px;
+    border-bottom: 1px transparent;
+    transition: border-bottom 0.5s;
+    position: relative;
+    bottom: 3px;
+}
+
+.navigation-link a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.bas-navigation-link a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+    padding-bottom: 10px;
+}
+
+.navigation-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.navigation-link a:hover {
+    color: black;
+}
+
+.bas-navigation-link a:hover {
+    color: black;
+}
+
+#instagram {
+    height: 35px;
+    width: 35px;
+    padding: 12px 10px 0 30px;
+}
+
+/* Portfolio styles */
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.portfolio-img {
+    position: relative;
+
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text .subtitle {
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text:hover .subtitle {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.img-brighten{
+    transition: 1s;
+    filter: brightness(100%);
+}
+
+/* Porfolio photos */
+
+.parallax {
+    min-height: 420px;
+    background: transparent;
+    margin: 0 0 27px 0;
+}
+
+.parralax-text {
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+    align-content: center;
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 180px;
+    text-shadow: -2px 2px 2px black;
+    margin-top: 33px;
+}
+
+.parralax-text-2 {
+    z-index: 2;
+    position: relative;
+    color: #ffffff;
+    align-content: center;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 5px;;
+    text-transform: uppercase;
+    text-align: center;
+    /* padding-top: 10px; */
+    text-shadow: -2px 2px 2px black;
+    /* margin-top: 32px; */
+}
+
+.gallery-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.contact-me {
+    padding-bottom: 100px;
+}
+
+.aboutme-container {
+    display:flex;
+    padding-bottom: 0px;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+#topBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    font-size: 22px;
+    width: 50px;
+    height: 50px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

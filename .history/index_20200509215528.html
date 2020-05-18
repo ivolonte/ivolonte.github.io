@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title> ilzes portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navigation">
+                <div clas="left-side">
+                    <div class="logo">
+                        <div>VOLONTE</div>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="navigation-link">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="navigation-link">
+                        <a href="about.html">About</a>
+                    </div>
+
+                    <div class="navigation-link">
+                        <a href="portfolio.html">Portfolio</a>
+                    </div>
+
+                    <div class="navigation-link">
+                        <a href="contacts.html">Contacts</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="content">
+                <div class="portfolio-items">
+
+                    <div class="portfolio-img">
+                        <div class="portfolio-img-background" style="background-image:url(images/image-38.jpg)"></div>
+
+                        <div class="img-text"> 
+                            <div class="logo">
+                                <img src="images/logos/adventure.png">
+                            </div>
+
+                            <div class="subtitle">
+                                The documentation of all my journeys
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img">
+                        <div class="portfolio-img-background" style="background-image:url(images/image-45.jpg)"></div>
+
+                        <div class="img-text"> 
+                            <div class="logo">
+                                <img src="images/logos/landscape.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Capturing Earth's beauty from my perspective
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img">
+                        <div class="portfolio-img-background" style="background-image:url(images/image-16.jpg)"></div>
+
+                        <div class="img-text"> 
+                            <div class="logo">
+                                <img src="images/logos/travel.png">
+                            </div>
+
+                            <div class="subtitle">
+                                My love for traveling
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img">
+                        <div class="portfolio-img-background" style="background-image:url(images/image-10.jpg)"></div>
+
+                        <div class="img-text"> 
+                            <div class="logo">
+                                <img src="images/logos/nighttime.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Showing you something you haven't seen before
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img">
+                        <div class="portfolio-img-background" style="background-image:url(images/image-2.jpg)"></div>
+
+                        <div class="img-text"> 
+                            <div class="logo">
+                                <img src="images/logos/portraits.png">
+                            </div>
+
+                            <div class="subtitle">
+                                The people I love
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-img">
+                        <div class="portfolio-img-background" style="background-image:url(images/image-55.jpg)"></div>
+
+                        <div class="img-text"> 
+                            <div class="logo">
+                                <img src="images/logos/drone.png">
+                            </div>
+
+                            <div class="subtitle">
+                                Have you seen what our world looks like from a birds view?
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-img')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log(portfolioItem);
+        })
+    })
+</script>
+
+</html>

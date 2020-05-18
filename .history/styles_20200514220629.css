@@ -1,0 +1,219 @@
+/* Master styles */
+body {
+    margin: 10px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.bs-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Navigation styles */
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.bs-navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.left-side {
+    display: flex;
+}
+
+#ivlogo {
+    height: 50px;
+    padding-left: 10px;
+    display: flex;
+}
+
+.right-side {
+    display: flex;
+}
+
+.navigation > .right-side > div {
+    margin-left: 30px;
+    font-size: 120%;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.bs-navigation > .right-side > div {
+    margin-left: 30px;
+    font-size: 120%;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.navigation-link {
+    height: 22px;
+    border-bottom: 1px transparent;
+    transition: border-bottom 0.5s;
+}
+
+.bas-navigation-link {
+    height: 22px;
+    border-bottom: 1px transparent;
+    transition: border-bottom 0.5s;
+    position: relative;
+    bottom: 3px;
+}
+
+.navigation-link a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.bas-navigation-link a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+    padding-bottom: 10px;
+}
+
+.navigation-link:hover {
+    border-bottom: 1px solid black;
+}
+
+.navigation-link a:hover {
+    color: black;
+}
+
+.bas-navigation-link a:hover {
+    color: black;
+}
+
+#instagram {
+    height: 35px;
+    width: 35px;
+    padding: 12px 10px 0 30px;
+}
+
+/* Portfolio styles */
+
+.portfolio-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.portfolio-img {
+    position: relative;
+
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text .subtitle {
+    font-weight: 600;
+    transition: 1s;
+    color: transparent;
+}
+
+.img-text:hover .subtitle {
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.img-brighten{
+    transition: 1s;
+    filter: brightness(100%);
+}
+
+/* Porfolio photos */
+
+.panoramic {
+    padding: 23px 0 27px 0;
+}
+
+.panoramic-adventures {
+    background-image: url(./images/adventures-img.jpg);
+    /* height: 420px; */
+    margin: 33px 0 27px 0;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+
+.panoramic-landscape {
+    background-image: url(./images/landscape-img.jpg);
+    height: 420px;
+    margin: 33px 0 27px 0;
+    background-size: cover;
+}
+
+.panoramic-nature {
+    background-image: url(./images/nature-img.jpg);
+    height: 420px;
+    margin: 33px 0 27px 0;
+    background-size: cover;
+}
+
+.panoramic-nighttime {
+    background-image: url(./images/nighttime-img.jpg);
+    height: 420px;
+    margin: 33px 0 27px 0;
+    background-size: cover;
+}
+
+.panoramic-portraits {
+    background-image: url(./images/portraits-img.jpg);
+    height: 420px;
+    margin: 33px 0 27px 0;
+    background-size: cover;
+}
+
+.panoramic-drone {
+    background-image: url(./images/drone-img.jpg);
+    height: 420px;
+    margin: 33px 0 27px 0;
+    background-size: cover;
+}
+
+.gallery-photos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+

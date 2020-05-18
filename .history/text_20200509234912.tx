@@ -1,0 +1,34 @@
+See how the darkness just cuts to normal light when you stop hovering the mouse over (1:25:10)
+
+
+You can fix that by adding:
+
+
+ .img-brighten{
+    transition: 1s;
+    filter: brightness(100%);
+
+}
+
+
+in stylesheet and add two lines to JavaScript code:
+
+
+portfolioItem.childNodes[1].classList.remove('img-brighten')
+portfolioItem.childNodes[1].classList.add('img-brighten')
+
+
+to make JavaScript code look like this:
+const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            console.log();
+            portfolioItem.childNodes[1].classList.remove('img-brighten')
+            portfolioItem.childNodes[1].classList.add('img-darken')
+        })
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log();
+            portfolioItem.childNodes[1].classList.add('img-brighten')
+            portfolioItem.childNodes[1].classList.remove('img-darken')
+        })
+    })
