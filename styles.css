@@ -167,6 +167,15 @@ body {
     filter: brightness(100%);
 }
 
+.mouse-icon {
+    height: 100%; 
+    width: 30px; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom: 65px;
+}
+
 /* Porfolio photos */
 
 .parallax {
