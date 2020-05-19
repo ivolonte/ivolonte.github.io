@@ -172,7 +172,7 @@ body {
 .parallax {
     min-height: 420px;
     background: transparent;
-    margin: 0 0 27px 0;
+    margin: 0 0 50px 0;
 }
 
 .parralax-text {
@@ -269,4 +269,80 @@ body {
 .contact-text {
     font-weight: 450; 
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*about me */
+
+.wrapper-dapper {
+    width:100%;
+} 
+
+.aboutme-info {
+    width:100%;
+}
+
+.aboutme-info h1 {
+    padding: 30px 30px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    color: black;
+    line-height: 44px;
+}
+
+.aboutme-info p {
+    padding: 10px 30px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px; 
+    font-weight: 400;
+    color: black;
+    line-height: 24px;
+}
+
+.img-me {
+    width: 100%;
+    padding: 0px 30px; 
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper-dapper {
+        width:600px;
+        margin: 0 auto;
+    } 
+
+    .aboutme-info h1 {
+        padding: 20px 0px 0px;
+    }
+    
+    .aboutme-info p {
+        padding: 20px 0px 0px;
+    }
+
+    .img-me {
+        padding-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .wrapper-dapper {
+        width:1000px;
+    } 
+    
+    .aboutme-info {
+        width:50%;
+        float: right;
+    }
+
+    .img-me {
+        padding-top: 0px;
+        width: 50%;
+        float: left;
+    }
+
+    .aboutme-info h1 {
+        padding: 20px 0px 0px 30px;
+    }
+    
+    .aboutme-info p {
+        padding: 20px 0px 0px 30px;
+    }
 }
